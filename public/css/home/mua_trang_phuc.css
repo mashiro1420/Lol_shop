@@ -1,0 +1,66 @@
+#content_bottom {
+  margin-top: 50px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.skin_container {
+  position: relative;
+  overflow: hidden;
+}
+.skin_container:hover{
+  cursor: pointer;
+}
+.skin_container:hover .skin_img {
+  transform: scale(1.1);
+}
+.skin_container a{
+  text-decoration: none;
+}
+.skin_container .skin_img {
+  transition: transform 0.25s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.skin_info {
+  width: 100%;
+  background-color: rgb(37, 36, 36);
+  border-top: 1px solid #927345;
+  transition: transform 0.5s ease-in-out;
+}
+.skin_container:hover .skin_info {
+  transform: translateY(-50px);
+}
+.skin_name,
+.skin_price {
+  font-weight: 500;
+}
+.skin_name{
+  color: #937341 !important;
+}
+.skin_price {
+  color: #c4b998 !important;
+}
+.buy_button{
+  color: #937341;
+  display: inline; 
+  font-size: 20px ;
+  font-weight: 500 ;
+  letter-spacing: 3.3px; 
+  line-height: 49px; 
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  bottom: -50px;
+  transition: bottom 0.5s ease-in-out;
+  background-color: rgb(37, 36, 36);
+  width: 100%;
+  border-top: 1px solid #937341;
+  text-align: center;
+}
+.skin_container:hover .buy_button {
+  bottom: 10px;
+}
+
